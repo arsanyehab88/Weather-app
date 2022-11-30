@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+
+      <nav class="navbar navbar-expand-md bg-dark py-3">
+        <div class="container mt-3">
+          <div class="weather-icon w-25 ms-5">
+            <a class="navbar-brand d-flex " href="#">
+              <img src="image/cloud.png" class="weatherI ms-4 "  alt="weather">
+              <div class="weatherText  ms-4 text-white">
+                  <h1 class="fs-6">Weather</h1>
+                  <small class="fs-6">tagline goes here</small>
+              </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 weather-nav">
+              <li class="nav-item men d-flex justify-content-center  align-items-center position-relative">
+                <a class="nav-link position-absolute fs-6" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item menu d-flex justify-content-center  align-items-center position-relative">
+                <a class="nav-link position-absolute" href="#">News</a>
+              </li>
+              <li class="nav-item menu d-flex justify-content-center align-items-center position-relative">
+                <a class="nav-link position-absolute" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item menu d-flex justify-content-center align-items-center position-relative">
+                <a class="nav-link position-absolute" href="#">Photos</a>
+              </li>
+              <li class="nav-item menu d-flex justify-content-center align-items-center position-relative">
+                <a class="nav-link position-absolute" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="home">
+        <div class="container">
+          <div class="search">
+          <form class="w-75  position-relative find mx-auto">
+            <input class="form-control rounded-pill bg-dark border-0 py-3 text-white" type="text" placeholder="location to search..." id="search">
+            <input type="button" class="rounded-pill px-5 position-absolute" value="find" id="submit">         
+          </form>   
+          </div>
+        </div>
+      </section>
+
+      <section id="main" class="bg-dark">
+        <div class="weather text-white position-relative">
+          <div class="container">
+            <div class="row gx-1 gy-3">
+              <div class="col-md-4 " id="data">
+
+              </div>
+              <div class="col-md-4" id="next">
+
+              </div>
+              <div class="col-md-4" id="after">
+
+              </div>
+            </div>
+
+          </div>
+        </div>   
+        <footer class="position-relative">
+          <div class="end">
+            <div class="container py-5">
+              <div class="row ">
+                <div class="col-md-8">
+                  <form class="w-75  position-relative find">
+                    <input class="form-control rounded-pill bg-dark border-0 py-3 text-white" type="text" placeholder="Enter your email to subscribe...">
+                    <input type="button" class="rounded-pill px-5 position-absolute" value="Subscribe">         
+                  </form> 
+                  <p class="text-white pt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+                <div class="col-md-3 offset-1 ">
+                  <div class="social d-flex">
+                    <a href="" class="link d-flex justify-content-center align-items-center ms-3">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="link d-flex justify-content-center align-items-center ms-3">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="" class="link d-flex justify-content-center align-items-center ms-3">
+                      <i class="fa-solid fa-g"></i>
+                    </a>
+                    <a href="" class="link d-flex justify-content-center align-items-center ms-3">
+                      <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>     
+      </section>
+
+      
+      
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

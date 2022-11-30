@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    
+}
+.weatherI{
+    width: 20%;
+}
+.weather-nav li a{
+    color: white;
+    font-size: 14px;
+    transition: all 1.1s ease;
+    
+}
+.men a{
+    color:#009ad8 !important;
+}
+.men::after{
+    content: "";
+    border-radius: 30px;
+    border: 2px solid #009ad8;
+    padding: 20px 50px;
+    margin-left: 5px;
+    
+}
+
+.menu::after{
+    content: "";
+    border-radius: 30px;
+    border: 2px solid transparent;
+    padding: 20px 50px;
+    margin-left: 5px;
+    transition: all 1s ease;
+}
+.weather-nav li:hover a
+{
+    color: #009ad8;
+    letter-spacing: 2px;
+}
+.menu:hover::after{
+    border-color: #009ad8;  
+} 
+
+
+
+
+#home{
+    background-image: url(../image/img1.png);
+    background-size: cover;
+    min-height: 450px;
+
+}
+.find input[type=button]{
+    top:5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: #009ad8;
+    border: none;
+    transition: all 1s ease;
+    color: white;
+}
+.find input[type=button]:hover{
+    padding-right: 70px !important;
+    letter-spacing: 8px;
+    padding-left: 70px !important;
+    background-color: #0684b6;   
+}
+.search{
+    padding-top: 70px;
+    margin-bottom: 10px;
+}
+
+
+
+.nav-weather{
+    background-color: rgba(0, 0, 0,.1);
+}
+.degree span{
+    top: 20px;
+}
+.degree p{
+    font-size: 5rem;
+    font-weight: 500;
+}
+.weather{
+    bottom:13rem ;
+}
+.weath{
+   background-image: linear-gradient(to bottom, blue , rgb(210, 43, 210) );
+
+}
+.degree i{
+    transition: all .5s ease-out;
+}
+.degree i:hover {
+    color: rgb(149, 196, 250);
+}
+.rotate i{
+    transform: rotate(50deg);
+}
+
+.cloud2-content p{
+    font-size: 4.3rem;
+    font-weight: 500;
+}
+.cloud2-content p span{
+    top: 20px;
+    padding-right: 10px;
+}
+.cloud2-icon i{
+    transition: all .5s ease-in-out;
+}
+.cloud2-icon i:hover{
+    color: rgb(243, 243, 126);
+}
+
+
+footer{
+    bottom: 8rem;
+    background-color: rgb(38, 41, 54);
+    height: 220px;
+}
+
+.social a{
+    background: rgb(30, 32, 43);
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.social a i{
+    transition: all .3s;
+    font-size: 1.3rem;
+}
+.social a:hover i{
+    transform: rotate(-45deg);
+    color: white;
+}
+.social a:nth-child(4):hover i{
+    transform: rotate(-45deg);
+    color: rgb(227, 13, 13);
+}
+.social a:nth-child(1):hover{
+    transform: rotate(45deg);
+    background: rgb(37, 37, 239);
+}
+.social a:nth-child(2):hover{
+    transform: rotate(45deg);
+    background: rgb(8, 151, 247);
+}
+.social a:nth-child(3):hover{
+    transform: rotate(45deg);
+    background: rgb(247, 52, 52);
+}
+.social a:nth-child(4):hover{
+    transform: rotate(45deg);
+    background: white;
+}
+
+#main{
+    max-height:400px ;
+}
