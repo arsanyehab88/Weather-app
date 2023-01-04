@@ -2,6 +2,9 @@
     box-sizing: border-box;
     
 }
+nav{
+    z-index: 999;
+}
 .weatherI{
     width: 20%;
 }
@@ -43,8 +46,15 @@
 
 
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
 #home{
-    background-image: url(../image/img1.png);
+    
     background-size: cover;
     min-height: 450px;
 
@@ -78,14 +88,16 @@
     top: 20px;
 }
 .degree p{
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: 500;
 }
 .weather{
     bottom:13rem ;
 }
 .weath{
-   background-image: linear-gradient(to bottom, blue , rgb(210, 43, 210) );
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
 
 }
 .degree i{

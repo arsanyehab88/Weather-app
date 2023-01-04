@@ -15,18 +15,19 @@ function display(a , t){
         var e = new Date(t.last_updated.replace(" ","T"))
         let x =`              
 
-        <div class="weath bg-dark rounded-4">
+        <div class="weath  rounded-4">
           <div class="table">
             <div class="nav-weather rounded-4 text-white d-flex justify-content-between">
               <div class="day ms-2"><p>${days[e.getDay()]}</p></div>
               <div class="date me-2"><p>${e.getDate() + monthNames[e.getMonth()]}</p></div>
             </div>
            </div>    
-              <div class="cloud ms-3">
-                <div class="location"><p class="fs-1">${a.name}</p></div>
-                <div class="degree d-flex justify-content-between" >
+              <div class="cloud ms-3 text-center">
+              <img class="me-4" src="http:${t.condition.icon}" class="w-50" >
+                <div class="location"><p class="fs-3">${a.name}</p></div>
+                <div class="degree  text-center" >
                   <p class=" position-relative">${t.temp_c}<span class="position-absolute"> ْ</span><span class="ps-4">c</span></p>
-                  <img class="me-3" src="http:${t.condition.icon}" class="w-50" >
+                  
                 </div>
                 <div class="custom text-info">${t.condition.text}</div>
                 <div class="icon d-flex justify-content-evenly me-4 pt-4 pb-1">
@@ -55,7 +56,7 @@ function display(a , t){
 function displayAfter(a){
     let y =``
         y+=`
-        <div class="weath bg-dark rounded-4 text-center">
+        <div class="weath  rounded-4 text-center">
           <div class="table">
             <div class="nav-weather rounded-4 text-white">
               <div class="day ms-2  pb-1"><p>${days[new Date(a[1].date.replace(" ","T")).getDay()]}</p></div>
@@ -79,7 +80,7 @@ function displayAfter(a){
 
     let x=``
     x+=`
-    <div class="weath bg-dark rounded-4 text-center">
+    <div class="weath rounded-4 text-center">
     <div class="table">
       <div class="nav-weather rounded-4 text-white">
         <div class="day ms-2  pb-1"><p>${days[new Date(a[2].date.replace(" ","T")).getDay()]}</p></div>
